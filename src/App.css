@@ -1,0 +1,29 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.shadow-violet:hover {
+  -webkit-box-shadow: 0px 5px 15px 1px rgba(185, 33, 255, 1);
+  -moz-box-shadow: 0px 5px 15px 1px rgba(185, 33, 255, 1);
+  box-shadow: 0px 5px 15px 1px rgba(185, 33, 255, 1);
+}
+
+.shadow-violet-active {
+  -webkit-box-shadow: 0px 5px 15px 1px rgba(185, 33, 255, 1);
+  -moz-box-shadow: 0px 5px 15px 1px rgba(185, 33, 255, 1);
+  box-shadow: 0px 5px 15px 1px rgba(185, 33, 255, 1);
+}
+
+.circle-shadow {
+  background-color: rgba(185, 33, 255, 0.5);
+  -webkit-box-shadow: 0px 0px 100px 30px rgba(185, 33, 255, 1);
+  -moz-box-shadow: 0px 0px 100px 30px rgba(185, 33, 255, 1);
+  box-shadow: 0px 0px 100px 30px rgba(185, 33, 255, 1);
+}
+
+.circle-shadow2 {
+  -webkit-box-shadow: 0px 0px 100px 20px rgba(185, 33, 255, 1);
+  -moz-box-shadow: 0px 0px 100px 20px rgba(185, 33, 255, 1);
+  box-shadow: 0px 0px 100px 20px rgba(185, 33, 255, 1);
+}
