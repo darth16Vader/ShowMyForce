@@ -112,7 +112,7 @@ function App() {
             <FontAwesomeIcon icon={darkMode ? faCloudMoon : faSun} />
             {hovered && (
               <div
-                className="text-xs absolute left-[-140px] left-0 bg-[#F2F2F2] shadow-lg text-[#404040] text-sm rounded-md px-2 py-1 shadow-md hidden sm:block"
+                className="text-xs absolute left-[-140px] bg-[#F2F2F2] shadow-lg text-[#404040] rounded-md px-2 py-1 hidden sm:block"
                 style={{ whiteSpace: "nowrap" }}
               >
                 {darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
@@ -120,9 +120,9 @@ function App() {
             )}
           </div>
 
-          <div className="xl:px-40 2xl:px-96 flex items-center h-screen p-4">
+          <div className="flex items-center h-screen p-4 xl:px-40 2xl:px-96">
             <div className="container mx-auto">
-              <div className="grid xl:grid-cols-2 xl:grid-flow-col gap-4">
+              <div className="grid gap-4 xl:grid-cols-2 xl:grid-flow-col">
                 <div>
                   <p className="font-black leading-[.7] text-[8rem] text-[#B921FF] opacity-10 dark:text-[#A3A3A3] hidden xl:block">
                     PORT
@@ -134,16 +134,32 @@ function App() {
                     <span className="text-[#B921FF]">.</span>
                   </div>
                   <div className="sm:ml-[2rem] flex">
-                    <div className="mx-auto flex xl:ml-0">
-                      <div className="rounded-full bg-neutral-200 w-8 h-8 flex items-center justify-center text-[#B921FF]">
-                        <FontAwesomeIcon icon={faFacebookF} />
-                      </div>
-                      <div className="ml-[.5rem] rounded-full bg-neutral-200 w-8 h-8 flex items-center justify-center text-[#B921FF]">
-                        <FontAwesomeIcon icon={faInstagram} />
-                      </div>
-                      <div className="ml-[.5rem] rounded-full bg-neutral-200 w-8 h-8 flex items-center justify-center text-[#B921FF]">
-                        <FontAwesomeIcon icon={faViber} />
-                      </div>
+                    <div className="flex mx-auto xl:ml-0">
+                      <a
+                        href="https://www.facebook.com/Alvin.S16.Paala"
+                        target="_blank"
+                      >
+                        <div className="rounded-full bg-neutral-200 w-8 h-8 flex items-center justify-center text-[#B921FF]">
+                          <FontAwesomeIcon icon={faFacebookF} />
+                        </div>
+                      </a>
+
+                      <a
+                        href="https://www.instagram.com/vnsmk.01/?igsh=Y3J6anFhN3Zod3Iy&utm_source=qr#"
+                        target="_blank"
+                      >
+                        <div className="ml-[.5rem] rounded-full bg-neutral-200 w-8 h-8 flex items-center justify-center text-[#B921FF]">
+                          <FontAwesomeIcon icon={faInstagram} />
+                        </div>
+                      </a>
+                      <a
+                        href="viber://chat?number=%2B639352838741"
+                        target="_blank"
+                      >
+                        <div className="ml-[.5rem] rounded-full bg-neutral-200 w-8 h-8 flex items-center justify-center text-[#B921FF]">
+                          <FontAwesomeIcon icon={faViber} />
+                        </div>
+                      </a>
                     </div>
                   </div>
                   <div className="w-[140px] mx-auto rounded-[180px] overflow-hidden relative mb-10 xl:hidden">
@@ -209,8 +225,8 @@ function App() {
             <p className="text-center text-[1.5rem] text-[#404040] dark:text-[#F2F2F2] mb-5 md:hidden font-semibold">
               What I Am Great At<span className="text-[#B921FF]">.</span>
             </p>
-            <div className="grid lg:grid-cols-2 xl:grid-flow-col gap-2 lg:gap-12 xl:gap-20 md:px-8 xl:px-0 mb-8">
-              <div className="px-4 grid grid-cols-2 text-center gap-4">
+            <div className="grid gap-2 mb-8 lg:grid-cols-2 xl:grid-flow-col lg:gap-12 xl:gap-20 md:px-8 xl:px-0">
+              <div className="grid grid-cols-2 gap-4 px-4 text-center">
                 <div>
                   <div className="relative bg-slate-50/[.4] rounded-[35px] py-8 sm:py-4 px-6 lg:py-12 mb-4 dark:bg-gradient-to-r dark:from-[#212121]/[.9] dark:to-[#210031]/[.9] dark:border-[1px] dark:border-[#404040]">
                     <div className="circle-shadow absolute top-[1rem] left-[1rem] hidden xl:block z-0"></div>
@@ -284,7 +300,7 @@ function App() {
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-4 text-center mb-5">
+            <div className="grid grid-cols-4 mb-5 text-center">
               <div className="col-span-2 my-5">
                 <p className="text-[1.5rem] leading-[1.1] text-[#B921FF]">
                   6+
@@ -313,7 +329,7 @@ function App() {
                 </p>
               </div>
             </div>
-            <div className="w-9/12 lg:w-7/12 xl:w-6/12 mx-auto mb-24">
+            <div className="w-9/12 mx-auto mb-24 lg:w-7/12 xl:w-6/12">
               <ul className="flex flex-wrap leading-[1.8] items-center justify-center space-x-4 text-[1.5rem] sm:text-[2rem] text-[#404040] dark:text-[#F2F2F2]">
                 <li className="hover:text-[#B921FF] duration-300 ease-out">
                   <FontAwesomeIcon icon={faHtml5} />
@@ -374,7 +390,7 @@ function App() {
           </div>
         </div>
         <div className="xl:px-40 2xl:px-96 flex py-6 md:pb-20 bg-[#D8D8D8] dark:bg-[#2C2D31] duration-700 ease-out">
-          <div className="relative container mx-auto">
+          <div className="container relative mx-auto">
             <div className="circle-shadow absolute top-[12%] right-[33%] hidden xl:block z-0"></div>
             <div className="mx-auto w-80 font-black leading-[.7] text-[8rem] text-[#B921FF] opacity-10 dark:text-[#A3A3A3] hidden lg:block">
               DEV
@@ -389,7 +405,7 @@ function App() {
                 key={project.id}
                 className="grid grid-cols-6 gap-8 px-4 mb-5 lg:mb-16"
               >
-                <div className="col-span-5 md:col-span-5 lg:col-span-4 hidden lg:block">
+                <div className="hidden col-span-5 md:col-span-5 lg:col-span-4 lg:block">
                   <img
                     className={`object-cover h-full w-full filter brightness-110 rounded-[35px] shadow-violet transition ease-in-out duration-700 ${
                       hoveredProjectId === project.id
@@ -411,7 +427,7 @@ function App() {
                       src={project.image}
                       alt={project.name}
                     />
-                    <h5 className="text-xl font-extralight leading-3">
+                    <h5 className="text-xl leading-3 font-extralight">
                       {project.name}
                       <span className="text-[#B921FF]">.</span>
                     </h5>
@@ -424,12 +440,12 @@ function App() {
                     </p>
                     {project.url && !project.disabledBtn && (
                       <div>
-                        <span className="ml-auto table group items-center space-x-4 text-right text-xs font-extralight hover:cursor-pointer">
+                        <span className="items-center table ml-auto space-x-4 text-xs text-right group font-extralight hover:cursor-pointer">
                           <a
                             href={project.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center space-x-1 group-hover:underline transition-all"
+                            className="inline-flex items-center space-x-1 transition-all group-hover:underline"
                           >
                             <span>Visit site</span>
                             <FontAwesomeIcon
@@ -447,9 +463,9 @@ function App() {
             <p className="text-[1.5rem] md:text-[2.5rem] text-[#404040] dark:text-[#F2F2F2] ml-4 mb-6 sm:mb-4 mt-6 sm:mt-16 font-semibold sm:font-normal md:tracking-[-2px]">
               Other Projects<span className="text-[#B921FF]">.</span>
             </p>
-            <div className="relative grid grid-cols-2 gap-4 px-4  mb-4 sm:mb-12">
+            <div className="relative grid grid-cols-2 gap-4 px-4 mb-4 sm:mb-12">
               <div className="circle-shadow absolute bottom-[0] left-[50%] hidden xl:block z-0"></div>
-              <div className="col-span-3 md:col-span-1 relative">
+              <div className="relative col-span-3 pb-5 md:col-span-1">
                 <img
                   className="object-cover h-auto w-full filter brightness-110 rounded-[35px] shadow-violet transition ease-in-out duration-700 mb-4"
                   src={toolalgo}
@@ -458,7 +474,7 @@ function App() {
                   Tool Algo Monitoring System
                 </p>
               </div>
-              <div className="col-span-3 md:col-span-1 relative">
+              <div className="relative col-span-3 pb-5 md:col-span-1">
                 <img
                   className="object-cover h-auto w-full filter brightness-110 rounded-[35px] shadow-violet transition ease-in-out duration-700 mb-4"
                   src={oven}
@@ -469,7 +485,7 @@ function App() {
               </div>
             </div>
             <div className="grid grid-cols-3 gap-4 px-4 ">
-              <div className="col-span-3 md:col-span-1 relative">
+              <div className="relative col-span-3 pb-5 md:col-span-1">
                 <img
                   className="object-cover h-auto w-full filter brightness-110 rounded-[35px] shadow-violet transition ease-in-out duration-700 mb-4"
                   src={psms}
@@ -478,7 +494,7 @@ function App() {
                   Project Services System
                 </p>
               </div>
-              <div className="col-span-3 md:col-span-1 relative">
+              <div className="relative col-span-3 pb-5 md:col-span-1">
                 <img
                   className="object-cover h-auto w-full filter brightness-110 rounded-[35px] shadow-violet transition ease-in-out duration-700 mb-4"
                   src={myrecipe}
@@ -487,7 +503,7 @@ function App() {
                   MyRecipe
                 </p>
               </div>
-              <div className="col-span-3 md:col-span-1 relative">
+              <div className="relative col-span-3 pb-5 md:col-span-1">
                 <img
                   className="object-cover h-auto w-full filter brightness-110 rounded-[35px] shadow-violet transition ease-in-out duration-700 mb-4"
                   src={bottle}
@@ -499,17 +515,17 @@ function App() {
             </div>
           </div>
         </div>
-        <footer className="relative xl:px-40 2xl:px-96 flex py-6 px-4 lg:px-0">
+        <footer className="relative flex px-4 py-6 xl:px-40 2xl:px-96 lg:px-0">
           <div className="circle-shadow absolute bottom-[50%] left-[5%] hidden xl:block z-0"></div>
           <div className="circle-shadow2 absolute bottom-[40%] right-[5%] hidden xl:block z-0"></div>
           <div className="container mx-auto">
             <div className="bg-slate-50/[.4] rounded-[35px] py-8 sm:py-4 px-6 lg:py-6 mb-4 dark:bg-gradient-to-r dark:from-[#212121]/[.9] dark:to-[#210031]/[.9] dark:border-[1px] dark:border-[#404040] text-[#404040] dark:text-[#F2F2F2]">
               <div className="grid grid-cols-4 gap-4">
-                <div className="col-span-4 lg:col-span-1 flex items-center justify-center lg:justify-start text-xl">
+                <div className="flex items-center justify-center col-span-4 text-xl lg:col-span-1 lg:justify-start">
                   Contact me<span className="text-[#B921FF]">.</span>
                 </div>
-                <div className="col-span-4 lg:col-span-1 flex items-center space-x-2 font-light dark:font-thin text-sm max-lg:mx-auto max-sm:mb-4">
-                  <FontAwesomeIcon icon={faGoogle} className="text-2xl mr-2" />
+                <div className="flex items-center col-span-4 space-x-2 text-sm font-light lg:col-span-1 dark:font-thin max-lg:mx-auto max-sm:mb-4">
+                  <FontAwesomeIcon icon={faGoogle} className="mr-2 text-2xl" />
                   <p>
                     <span className="text-gray-400 dark:text-gray-500">
                       email
@@ -518,11 +534,11 @@ function App() {
                     alvin16paala@gmail.com
                   </p>
                 </div>
-                <div className="col-span-4 lg:col-span-1 font-light dark:font-thin text-sm max-lg:mx-auto max-sm:mb-4">
+                <div className="col-span-4 text-sm font-light lg:col-span-1 dark:font-thin max-lg:mx-auto max-sm:mb-4">
                   <div className="flex items-center space-x-2">
                     <FontAwesomeIcon
                       icon={faMobileScreenButton}
-                      className="text-2xl mr-2"
+                      className="mr-2 text-2xl"
                     />
                     <p>
                       <span className="text-gray-400 dark:text-gray-500">
@@ -533,12 +549,12 @@ function App() {
                     </p>
                   </div>
                 </div>
-                <div className="col-span-4 lg:col-span-1 flex items-center max-lg:justify-center xl:justify-end space-x-2 font-light dark:font-thin text-sm text-center">
+                <div className="flex items-center col-span-4 space-x-2 text-sm font-light text-center lg:col-span-1 max-lg:justify-center xl:justify-end dark:font-thin">
                   <div>
                     © 2025 |
                     <span className="ml-1 font-medium"> Alvin Paala</span>
                     <br />
-                    <div className="hidden lg:block text-xs text-right w-full text-gray-400 dark:text-gray-400">
+                    <div className="hidden w-full text-xs text-right text-gray-400 lg:block dark:text-gray-400">
                       Build with Tailwind
                     </div>
                   </div>
